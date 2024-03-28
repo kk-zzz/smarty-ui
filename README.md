@@ -9,3 +9,10 @@ npm i unocss -D
 
 - [Use in Vite](https://unocss.dev/integrations/vite)
 
+3. Use Icon in UnoCSS
+
+- [preset icons](https://unocss.dev/presets/icons)
+
+```bash
+npm i @iconify-json/ic -D
+```
