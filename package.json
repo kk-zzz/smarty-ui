@@ -2,21 +2,30 @@
   "name": "smarty-ui-vite",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "docs:dev": "npm run register:components && vitepress dev docs",
+    "docs:dev2": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "register:components": "vitepress-rc"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@iconify-json/ic": "^1.1.17",
+    "@types/node": "^20.11.30",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
-    "unocss": "^0.58.7",
-    "vite": "^5.2.2"
+    "vite": "^5.2.2",
+    "vitepress": "^1.0.1",
+    "vitepress-theme-demoblock": "^3.0.5"
   },
   "dependencies": {
+    "unocss": "^0.58.7",
     "vue": "^3.4.21"
   }
 }
