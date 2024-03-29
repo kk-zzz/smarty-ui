@@ -1,18 +1,13 @@
-1. Install UnoCSS
-- [UnoCSS](https://www.npmjs.com/package/unocss)
+1. Install Jest
 
 ``` bash
-npm i unocss -D
+npm i jest -g
 ```
 
-2. Use UnoCSS in Vite
+2. Execute
 
-- [Use in Vite](https://unocss.dev/integrations/vite)
-
-3. Use Icon in UnoCSS
-
-- [preset icons](https://unocss.dev/presets/icons)
-
-```bash
-npm i @iconify-json/ic -D
+```sh
+npx jest
 ```
+
+![add_jest](./imgs/add_jest.png)
