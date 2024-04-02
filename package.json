@@ -14,8 +14,7 @@
     "register:components": "vitepress-rc",
     "test": "vitest",
     "lint": "eslint --fix --ext .ts,.vue src vite.config.ts",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
-    "prepare": "husky"
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\""
   },
   "author": "",
   "license": "ISC",
