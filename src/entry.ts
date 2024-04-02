@@ -4,11 +4,7 @@ import SFCButton from './SFCButton.vue'
 import JSXButton from './JSXButton'
 
 // 导出单独组件
-export {
-  MyButton,
-  SFCButton,
-  JSXButton
-}
+export { MyButton, SFCButton, JSXButton }
 
 // 编写一个插件，实现一个 install 方法
 export default {

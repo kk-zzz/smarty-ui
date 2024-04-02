@@ -17,11 +17,7 @@ const rollupOptions = {
 
 export default defineConfig({
   // 插件
-  plugins: [
-    vue(),
-    vueJsx(),
-    UnoCSS()
-  ],
+  plugins: [vue(), vueJsx(), UnoCSS()],
   // build 配置
   build: {
     rollupOptions,

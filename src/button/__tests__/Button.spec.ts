@@ -1,4 +1,4 @@
-import Button from "../Button"
+import Button from '../Button'
 
 import { shallowMount } from '@vue/test-utils'
 import { describe, expect, test } from 'vitest'
@@ -17,7 +17,6 @@ describe('Button', () => {
     // 断言
     expect(wrapper.text()).toBe('Button')
   })
-
 })
 
 // color
@@ -29,7 +28,12 @@ describe('color', () => {
       }
     })
 
-    expect(wrapper.classes().map(v => v.replace('\n', '')).includes('bg-blue-500')).toBe(true)
+    expect(
+      wrapper
+        .classes()
+        .map((v) => v.replace('\n', ''))
+        .includes('bg-blue-500')
+    ).toBe(true)
   })
 
   test('red', () => {
@@ -42,6 +46,11 @@ describe('color', () => {
       }
     })
 
-    expect(wrapper.classes().map(v => v.replace('\n', '')).includes('bg-red-500')).toBe(true)
+    expect(
+      wrapper
+        .classes()
+        .map((v) => v.replace('\n', ''))
+        .includes('bg-red-500')
+    ).toBe(true)
   })
 })

@@ -1,32 +1,47 @@
 1. Install
 
 ``` bash
-npm i vitest happy-dom @vue/test-utils -D
+# eslint 检查代码语法，eg: 是否有声明但是并没有使用的变量
+npm i eslint -D
+# prettier 专注于代码格式的调整功能
+npm i prettier -D
+
+# eslint 专门解析 typescript 的解析器
+npm i @typescript-eslint/parser -D
+# 内置各种解析 typescript rules 插件
+npm i @typescript-eslint/eslint-plugin -D
+
+# 使 eslint 和 prettier 更好地集成
+npm i eslint-plugin-prettier -D
+npm i eslint-config-prettier -D
+
+npm i eslint-plugin-vue -D
+
+# 为 typescript 提供Vue推荐的 eslint 配置
+npm i @vue/eslint-config-typescript -D
+# 用于解决 eslint 与 prettier 之间可能的规则冲突
+npm i @vue/eslint-config-prettier -D
 ```
 
-- vitest: 测试框架，用于执行整个测试过程并提供断言库、mock、覆盖率；
+```sh
+# install eslint
+npm i -D eslint eslint-plugin-vue @typescript-eslint/parser @typescript-eslint/eslint-plugin
 
-- happy-dom: 用于提供在 Node 环境中的 Dom 仿真模型；
+# install prettier
+npm i -D prettier eslint-config-prettier eslint-plugin-prettier  
 
-- @vue/test-utils: 工具库，Vue推荐的测试工具库。
+npm i @vue/eslint-config-typescript @vue/eslint-config-prettier -D
 
-2. 配置Vitest in `package.json`
-
-```js
-
-export default defineConfig({
-  // ...
-  test: {
-    // enable jest-like global test APIs
-    globals: true,
-    // simulate DOM with happy-dom
-    // (requires installing happy-dom as a peer dependency)
-    environment: 'happy-dom',
-    // 支持tsx组件，很关键
-    transformMode: {
-      web: [/.[tj]sx$/]
-    }
-  }
-})
 ```
 
+2. Use husky
+
+- [husky](https://typicode.github.io/husky/get-started.html)
+
+```sh
+npm i husky -D
+
+npx husky init
+
+# 修改 ./husky/pre-commit
+```
