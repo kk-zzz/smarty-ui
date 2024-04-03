@@ -72,3 +72,8 @@ npx commitizen init cz-conventional-changelog --save-dev --save-exact
 
 npm run commit
 ```
+
+```sh
+# 安裝 cz 适配器
+npm i  commitlint-config-cz  cz-customizable -D
+```

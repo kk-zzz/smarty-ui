@@ -15,7 +15,7 @@
     "test": "vitest",
     "lint": "eslint --fix --ext .ts,.vue src vite.config.ts",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
-    "commit": "git add . && cz"
+    "commit": "git add . && cz-customizable"
   },
   "author": "",
   "license": "ISC",
@@ -30,7 +30,9 @@
     "@vue/eslint-config-typescript": "^13.0.0",
     "@vue/test-utils": "^2.4.5",
     "commitizen": "^4.3.0",
+    "commitlint-config-cz": "^0.13.3",
     "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
@@ -56,7 +58,10 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.cjs"
     }
   }
 }
