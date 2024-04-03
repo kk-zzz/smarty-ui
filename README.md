@@ -1,3 +1,5 @@
+<!-- https://zhuanlan.zhihu.com/p/659839223 -->
+
 1. Install
 
 ``` bash
@@ -76,4 +78,11 @@ npm run commit
 ```sh
 # 安裝 cz 适配器
 npm i  commitlint-config-cz  cz-customizable -D
+```
+
+# Repair import
+
+```sh
+# 自动修复 import 的排序
+npm i eslint-plugin-simple-import-sort -D
 ```
