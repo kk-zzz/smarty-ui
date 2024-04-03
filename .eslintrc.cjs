@@ -15,16 +15,20 @@ module.exports = {
   parser: 'vue-eslint-parser',
   extends: [
     'plugin:vue/vue3-essential',
+    'plugin:@typescript-eslint/recommended',
     'eslint:recommended',
     '@vue/typescript/recommended',
     '@vue/prettier',
     'plugin:prettier/recommended'
   ],
-  plugins: ['@typescript-eslint', 'simple-import-sort'],
+  plugins: ['vue', '@typescript-eslint', 'simple-import-sort'],
   parserOptions: {
     parser: '@typescript-eslint/parser',
     ecmaVersion: 2020,
-    sourceType: 'module'
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true
+    }
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
