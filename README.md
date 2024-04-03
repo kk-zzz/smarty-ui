@@ -62,3 +62,13 @@ npx husky init
 - chore：其他修改（不在上述类型中的修改）；
 - release：发布新版本；
 - workflow：工作流相关文件修改。
+
+```sh
+# 安裝自動化提示工具
+npm i commitizen cz-conventional-changelog -D
+
+# 初始化命令行
+npx commitizen init cz-conventional-changelog --save-dev --save-exact
+
+npm run commit
+```
